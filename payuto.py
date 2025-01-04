@@ -1,10 +1,8 @@
 import pyautogui
+pyautogui.FAILSAFE = True
+pyautogui.useImageNotFoundException()
 
 def pyau_click(pathimg):
- 
-    pyautogui.FAILSAFE = True
-    pyautogui.useImageNotFoundException()
-    
     loop = 0
     while True:
         try:
@@ -21,4 +19,3 @@ def pyau_click(pathimg):
             
         loop+=1
         if loop == 5:break
-        
